@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-
+source 'https://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -41,3 +40,21 @@ group :development, :test do
   gem 'spring'
 end
 
+############
+gem 'mongoid', '~> 4.0.2'
+gem 'simple_form'
+gem 'haml'
+gem 'bootstrap-sass', '~> 3.3.5'
+
+# 更友好的出错页面
+group :test, :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.4.1'
+  gem "factory_girl_rails"
+  gem 'capybara'
+  gem 'rspec-rails', '~> 3.0'
+end
